@@ -3,7 +3,7 @@ import axios from'axios'
 
 const Action = () => async(dispatch)=>{
     try{
-        const product = await axios.get('http://localhost:1000/getProducts')
+        const product = await axios.get('https://shoppingbackend-6iki.onrender.com')
          const res = product.data
 
          dispatch({type:'success',payload:res})

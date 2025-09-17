@@ -8,7 +8,7 @@ const Reducers = (state = initialState, action) => {
       return {
         products: Array.isArray(action.payload) 
           ? action.payload 
-          : action.payload.products || []   // 👈 agar object me products hai
+          : action.payload.products || [] 
       }
 
     case 'fail':
