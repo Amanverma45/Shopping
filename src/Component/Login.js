@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../Style/Login.css'
 
 const Login = () => {
@@ -29,7 +30,7 @@ const Login = () => {
                 </form>
 
                 <p className="signup-text">
-                    Dont have an account? <a href="#">Sign up</a>
+                    Don’t have an account? <Link to="/signup">Sign up</Link>
                 </p>
             </div>
         </div>
