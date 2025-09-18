@@ -1,4 +1,4 @@
-/* .navbar-container {
+.navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,106 +60,7 @@
 
 @media (max-width: 768px) {
   .navbar-container {
-    height: 45vh;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 5px 10px;
-  }
-
-  .logo-img {
-    height: 137px;
-    margin: -31px -91px -73px -27px;
-  }
-}
-
-.link-container {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
-  width: 25%;
-}
-
-.link-container .nav-link,
-.link-container .nav-link1 {
-  font-size: 10px;
-  padding: 6px 5px;
-  width: 100%;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #d4deeb;
-  padding: 0px 60px;
-  height: 13vh;
-  min-height: 60px;
-  border-bottom: 1px solid black;
-}
-
-.logo-img {
-  height: 80px;
-  width: auto;
-  margin-left: -30px;
-  transition: transform 0.6s ease-in-out;
-}
-
-.logo-img:hover {
-  transform: rotate(360deg);
-}
-
-.link-container {
-  display: flex;
-  gap: 40px; 
-}
-
-.link-container .nav-link,
-.link-container .nav-link1 {
-  position: relative;
-  color: #303336;
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.link-container .nav-link::after,
-.link-container .nav-link1::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  left: 0;
-  bottom: -3px;
-  background-color: #0d6efd;
-  transition: width 0.3s ease;
-}
-
-.link-container .nav-link:hover::after,
-.link-container .nav-link1:hover::after {
-  width: 100%;
-}
-
-.link-container .nav-link:hover,
-.link-container .nav-link1:hover {
-  color: #0d6efd;
-  transform: translateY(-2px);
-}
-
-@media (max-width: 768px) {
-  .navbar-container {
-    height: 16vh; 
+    height: 16vh;
     flex-direction: column;
     align-items: flex-start;
     padding: 10px 20px;
@@ -174,13 +75,14 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
-    width: 100%; 
-    margin-top: 10px; 
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 20px;
   }
 
   .link-container .nav-link,
   .link-container .nav-link1 {
-    font-size: 14px; 
+    font-size: 14px;
     padding: 6px 0;
     width: 100%;
   }
