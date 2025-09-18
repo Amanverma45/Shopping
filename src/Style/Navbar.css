@@ -97,7 +97,6 @@
 
 
 
-/* Desktop Styles */
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -122,7 +121,7 @@
 
 .link-container {
   display: flex;
-  gap: 40px; /* gap between links */
+  gap: 40px; 
 }
 
 .link-container .nav-link,
@@ -158,10 +157,9 @@
   transform: translateY(-2px);
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
   .navbar-container {
-    height: auto; /* let it grow */
+    height: 16vh; 
     flex-direction: column;
     align-items: flex-start;
     padding: 10px 20px;
@@ -176,13 +174,13 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
-    width: 100%; /* take full width */
-    margin-top: 10px; /* small spacing below logo */
+    width: 100%; 
+    margin-top: 10px; 
   }
 
   .link-container .nav-link,
   .link-container .nav-link1 {
-    font-size: 14px; /* adjust size for mobile */
+    font-size: 14px; 
     padding: 6px 0;
     width: 100%;
   }
