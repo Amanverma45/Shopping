@@ -3,6 +3,8 @@ import { Route ,Routes} from 'react-router-dom'
 import Cart from './Component/Cart'
 import Navbar from './Component/Navbar';
 import Home from './Component/Home';
+import Signup from './Component/Signup';
+import Login from './Component/Login';
 
 function App() {
   const [cart,setcart] = useState([])
@@ -39,13 +41,13 @@ function App() {
 
     <div>
 
-     <Navbar/>
-
+<Navbar/>
          <Routes>        
 
          <Route path="/" element={<Home handleCart={handleCart}/>}></Route>
-
          <Route path="/Cart" element={<Cart cart={cart} setcart={setcart} />} ></Route>
+         <Route path="/signup" element={<Signup/>}></Route>
+         <Route path="/login" element={<Login/>}></Route>
 
          
 

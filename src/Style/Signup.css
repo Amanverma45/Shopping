@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;  
+  padding: 20px;
+}
+
+.wrap {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 450px;
+  width: 100%;
+}
+
+.wrap h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+form .row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+form .col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+}
+
+input {
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #2575fc;
+  outline: none;
+  box-shadow: 0 0 5px rgba(37, 117, 252, 0.4);
+}
+
+form > label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button[type="submit"] {
+  background: #2575fc;
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  background: #1250b5;
+}
+
+.btn-ghost {
+  background: #f1f1f1;
+  color: #333;
+}
+
+.btn-ghost:hover {
+  background: #ddd;
+}
+
+.small {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 15px;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .wrap {
+    padding: 20px;
+  }
+
+  form .row {
+    flex-direction: column;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions button {
+    margin: 5px 0;
+  }
+}

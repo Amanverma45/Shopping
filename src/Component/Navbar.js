@@ -13,9 +13,9 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="link-container">
-        <Link className="nav-link" to="/home">Home</Link>
+        <Link className="nav-link" to="/">Home</Link>
         <Link className="nav-link" to="/signup">Signup</Link>
-        <Link className="nav-link" to="/signin">Signin</Link>
+        <Link className="nav-link" to="/login">Login</Link>
         <Link className="nav-link1" to="/cart">Cart<FaCartArrowDown /></Link>
       </div>
     </div>
