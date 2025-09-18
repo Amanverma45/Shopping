@@ -60,6 +60,7 @@
 
 @media (max-width: 768px) {
   .navbar-container {
+    height: 12vh;
     flex-direction: column;     
     align-items: flex-start;     
     padding: 5px 10px;
