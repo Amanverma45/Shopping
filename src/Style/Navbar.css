@@ -61,7 +61,7 @@
 @media (max-width: 768px) {
   .navbar-container {
     /* height: 53vh; */
-    max-height: 100vh;
+    max-height: 55vh;
     flex-direction: column;     
     align-items: flex-start;     
     padding: 5px 10px;
