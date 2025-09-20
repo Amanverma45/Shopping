@@ -22,11 +22,7 @@ const Home = ({ handleCart }) => {
           <p className="rating">⭐ {item.rating}</p>
           <p className="review">{item.review} Reviews</p>
           <p className="desc">{item.desc}</p>
-          <button
-            onClick={() => handleCart(item)}
-          >
-            Add to Cart
-          </button>
+          <button onClick={() => handleCart(item)}>Add to Cart</button>
         </div>
       ))}
     </div>
